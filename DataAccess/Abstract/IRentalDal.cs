@@ -8,9 +8,9 @@ using System.Text;
 
 namespace DataAccess.Abstract
 {
-    // DAL = Data Access Layer    DAO = Data Access Object
-    public interface ICarDal:IEntityRepository<Car>
+    public interface IRentalDal:IEntityRepository<Rental>
     {
-        List<CarDetailDto> GetCarDetails(Expression<Func<Car, bool>> filter = null);
+        List<RentalDetailDto> GetCarDetails(Expression<Func<Rental, bool>> filter = null);
+
     }
 }
